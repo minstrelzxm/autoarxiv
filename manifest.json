@@ -11,7 +11,9 @@
   ],
   "host_permissions": [
     "*://arxiv.org/*",
-    "*://export.arxiv.org/*"
+    "*://export.arxiv.org/*",
+    "*://*.biorxiv.org/*",
+    "<all_urls>"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -22,7 +24,8 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "options_ui": {
     "page": "options.html",
